@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Kendo UI Snippet</title>
+
+    <link rel="stylesheet" href="http://kendo.cdn.telerik.com/2016.2.607/styles/kendo.common.min.css" />
+    <link rel="stylesheet" href="http://kendo.cdn.telerik.com/2016.2.607/styles/kendo.silver.min.css" />
+
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script src="http://kendo.cdn.telerik.com/2016.2.607/js/kendo.all.min.js"></script>
+
+    <link href="styles/dashboard.css" rel="stylesheet" />
+    <script src="scripts/dashboard.js"></script>
+    <script src="scripts/watchList.js"></script>
+</head>
+
+<body>
+    <div id="horizontal">
+        <div>
+            <h2>Watch List</h2>
+            <div id="dashboardWatchList"></div>
+        </div>
+        <div>
+            Layout
+        </div>
+        <div>
+            Graphs
+        </div>
+    </div>
+
+    <!-- http://docs.telerik.com/kendo-ui/framework/templates/load-remote -->
+    <script type="text/x-kendo-tmpl" id="watch_list_item_template">
+        <div>
+            <div class="edit-buttons">
+                <a class="k-button k-delete-button" href="\\#"><span class="k-icon k-delete"></span></a>
+            </div>
+            <div class="watch-list-item">
+                <strong>Product Name</strong> #:ProductName#<br />
+                <strong>Property List</strong> ID:#:ProductID#, Price:#:UnitPrice#,Units in stock:#:UnitsInStock#,Discontinued:#:Discontinued# <br />
+            </div>
+            <hr>
+        </div>
+    </script>
+
+    <script>
+
+        
+    </script>
+
+</body>
+</html>
